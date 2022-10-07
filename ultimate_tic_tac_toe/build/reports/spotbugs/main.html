@@ -1,0 +1,463 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>SpotBugs Report</title>
+      <style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+
+		.tablerow0:hover, .tablerow1:hover {
+			background: #aaffaa;
+		}
+
+		.priority-1 {
+				color: red;
+				font-weight: bold;
+		}
+		.priority-2 {
+				color: orange;
+				font-weight: bold;
+		}
+		.priority-3 {
+				color: green;
+				font-weight: bold;
+		}
+		.priority-4 {
+				color: blue;
+				font-weight: bold;
+		}
+		</style>
+      <script type="text/javascript">
+			function toggleRow(elid) {
+				if (document.getElementById) {
+					element = document.getElementById(elid);
+					if (element) {
+						if (element.style.display == 'none') {
+							element.style.display = 'block';
+							//window.status = 'Toggle on!';
+						} else {
+							element.style.display = 'none';
+							//window.status = 'Toggle off!';
+						}
+					}
+				}
+			}
+		</script>
+   </head>
+   <body>
+      <h1>
+         <a href="https://spotbugs.github.io/">SpotBugs</a> Report</h1>
+      <h2>Project Information</h2>
+      <p>Project: 
+		ultimate_tic_tac_toe (spotbugsMain)</p>
+      <p>SpotBugs version: 4.0.0</p>
+      <p>Code analyzed:</p>
+      <ul>
+         <li>C:\Users\Lukasz\Desktop\dane\newnew\ultimate_tic_tac_toe\build\classes\java\main\com\example\tictactoe\controllers\GameController.class</li>
+         <li>C:\Users\Lukasz\Desktop\dane\newnew\ultimate_tic_tac_toe\build\classes\java\main\com\example\tictactoe\dao\BoardRepo.class</li>
+         <li>C:\Users\Lukasz\Desktop\dane\newnew\ultimate_tic_tac_toe\build\classes\java\main\com\example\tictactoe\dao\GameRepo.class</li>
+         <li>C:\Users\Lukasz\Desktop\dane\newnew\ultimate_tic_tac_toe\build\classes\java\main\com\example\tictactoe\dao\GameStateRepo.class</li>
+         <li>C:\Users\Lukasz\Desktop\dane\newnew\ultimate_tic_tac_toe\build\classes\java\main\com\example\tictactoe\dao\PlayerRepo.class</li>
+         <li>C:\Users\Lukasz\Desktop\dane\newnew\ultimate_tic_tac_toe\build\classes\java\main\com\example\tictactoe\DemoApplication.class</li>
+         <li>C:\Users\Lukasz\Desktop\dane\newnew\ultimate_tic_tac_toe\build\classes\java\main\com\example\tictactoe\models\Board.class</li>
+         <li>C:\Users\Lukasz\Desktop\dane\newnew\ultimate_tic_tac_toe\build\classes\java\main\com\example\tictactoe\models\Game.class</li>
+         <li>C:\Users\Lukasz\Desktop\dane\newnew\ultimate_tic_tac_toe\build\classes\java\main\com\example\tictactoe\models\GameState.class</li>
+         <li>C:\Users\Lukasz\Desktop\dane\newnew\ultimate_tic_tac_toe\build\classes\java\main\com\example\tictactoe\models\Player.class</li>
+         <li>C:\Users\Lukasz\Desktop\dane\newnew\ultimate_tic_tac_toe\build\classes\java\main\com\example\tictactoe\models\State.class</li>
+         <li>C:\Users\Lukasz\Desktop\dane\newnew\ultimate_tic_tac_toe\build\classes\java\main\com\example\tictactoe\services\GameService.class</li>
+         <li>C:\Users\Lukasz\Desktop\dane\newnew\ultimate_tic_tac_toe\build\classes\java\main\dto\PlayerTo.class</li>
+      </ul>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>Metrics</h2>
+      <p>537 lines of code analyzed,
+	in 13 classes, 
+	in 6 packages.</p>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Metric</th>
+            <th align="right">Total</th>
+            <th align="right">Density*</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>High Priority Warnings</td>
+            <td align="right">3</td>
+            <td align="right">5.59</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>Medium Priority Warnings</td>
+            <td align="right">12</td>
+            <td align="right">22.35</td>
+         </tr>
+         <tr class="$totalClass">
+            <td>
+               <b>Total Warnings</b>
+            </td>
+            <td align="right">
+               <b>15</b>
+            </td>
+            <td align="right">
+               <b>27.93</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <i>(* Defects per Thousand lines of non-commenting source statements)</i>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>Contents</h2>
+      <ul>
+         <li>
+            <a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+         </li>
+         <li>
+            <a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+         </li>
+         <li>
+            <a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+         </li>
+         <li>
+            <a href="#Details">Details</a>
+         </li>
+      </ul>
+      <h1>Summary</h1>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Warning Type</th>
+            <th align="right">Number</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+            </td>
+            <td align="right">3</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+            </td>
+            <td align="right">11</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_PERFORMANCE">Performance Warnings</a>
+            </td>
+            <td align="right">1</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <b>Total</b>
+            </td>
+            <td align="right">
+               <b>15</b>
+            </td>
+         </tr>
+      </table>
+      <h1>Warnings</h1>
+      <p>Click on a warning row to see full context information.</p>
+      <h2>
+         <a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+      </h2>
+      <table class="warningtable" width="100%" cellspacing="0">
+         <tr class="tableheader">
+            <th align="left">Code</th>
+            <th align="left">Warning</th>
+         </tr>
+         <tr class="tablerow1" onclick="toggleRow('d1e264');">
+            <td>
+               <span class="priority-1">RC</span>
+            </td>
+            <td>Suspicious comparison of Long references in com.example.tictactoe.models.Game.move(int, int)</td>
+         </tr>
+         <tr class="detailrow1">
+            <td/>
+            <td>
+               <p id="d1e264" style="display: none;">
+                  <a href="#RC_REF_COMPARISON">Bug type RC_REF_COMPARISON (click for details)</a>
+                  <br/>In class com.example.tictactoe.models.Game<br/>In method com.example.tictactoe.models.Game.move(int, int)<br/>Actual type Long<br/>Return value of com.example.tictactoe.models.Player.getPlayerId() of type Long<br/>Value loaded from field com.example.tictactoe.models.Game.currentPlayer<br/>At Game.java:[line 110]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0" onclick="toggleRow('d1e287');">
+            <td>
+               <span class="priority-1">RC</span>
+            </td>
+            <td>Suspicious comparison of Long references in com.example.tictactoe.services.GameService.playerMove(Long, Long, int, int)</td>
+         </tr>
+         <tr class="detailrow0">
+            <td/>
+            <td>
+               <p id="d1e287" style="display: none;">
+                  <a href="#RC_REF_COMPARISON">Bug type RC_REF_COMPARISON (click for details)</a>
+                  <br/>In class com.example.tictactoe.services.GameService<br/>In method com.example.tictactoe.services.GameService.playerMove(Long, Long, int, int)<br/>Actual type Long<br/>Value loaded from playerId<br/>Return value of com.example.tictactoe.models.Game.getPlayer1() of type Long<br/>At GameService.java:[line 126]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1" onclick="toggleRow('d1e308');">
+            <td>
+               <span class="priority-1">RC</span>
+            </td>
+            <td>Suspicious comparison of Long references in com.example.tictactoe.services.GameService.playerMove(Long, Long, int, int)</td>
+         </tr>
+         <tr class="detailrow1">
+            <td/>
+            <td>
+               <p id="d1e308" style="display: none;">
+                  <a href="#RC_REF_COMPARISON">Bug type RC_REF_COMPARISON (click for details)</a>
+                  <br/>In class com.example.tictactoe.services.GameService<br/>In method com.example.tictactoe.services.GameService.playerMove(Long, Long, int, int)<br/>Actual type Long<br/>Value loaded from playerId<br/>Return value of com.example.tictactoe.models.Game.getPlayer2() of type Long<br/>At GameService.java:[line 158]</p>
+            </td>
+         </tr>
+      </table>
+      <h2>
+         <a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+      </h2>
+      <table class="warningtable" width="100%" cellspacing="0">
+         <tr class="tableheader">
+            <th align="left">Code</th>
+            <th align="left">Warning</th>
+         </tr>
+         <tr class="tablerow1" onclick="toggleRow('d1e90');">
+            <td>
+               <span class="priority-2">EI</span>
+            </td>
+            <td>com.example.tictactoe.models.Board.receiveRow(int) may expose internal representation by returning Board.w1</td>
+         </tr>
+         <tr class="detailrow1">
+            <td/>
+            <td>
+               <p id="d1e90" style="display: none;">
+                  <a href="#EI_EXPOSE_REP">Bug type EI_EXPOSE_REP (click for details)</a>
+                  <br/>In class com.example.tictactoe.models.Board<br/>In method com.example.tictactoe.models.Board.receiveRow(int)<br/>Field com.example.tictactoe.models.Board.w1<br/>At Board.java:[line 110]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0" onclick="toggleRow('d1e106');">
+            <td>
+               <span class="priority-2">EI</span>
+            </td>
+            <td>com.example.tictactoe.models.Board.receiveRow(int) may expose internal representation by returning Board.w10</td>
+         </tr>
+         <tr class="detailrow0">
+            <td/>
+            <td>
+               <p id="d1e106" style="display: none;">
+                  <a href="#EI_EXPOSE_REP">Bug type EI_EXPOSE_REP (click for details)</a>
+                  <br/>In class com.example.tictactoe.models.Board<br/>In method com.example.tictactoe.models.Board.receiveRow(int)<br/>Field com.example.tictactoe.models.Board.w10<br/>At Board.java:[line 137]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1" onclick="toggleRow('d1e122');">
+            <td>
+               <span class="priority-2">EI</span>
+            </td>
+            <td>com.example.tictactoe.models.Board.receiveRow(int) may expose internal representation by returning Board.w2</td>
+         </tr>
+         <tr class="detailrow1">
+            <td/>
+            <td>
+               <p id="d1e122" style="display: none;">
+                  <a href="#EI_EXPOSE_REP">Bug type EI_EXPOSE_REP (click for details)</a>
+                  <br/>In class com.example.tictactoe.models.Board<br/>In method com.example.tictactoe.models.Board.receiveRow(int)<br/>Field com.example.tictactoe.models.Board.w2<br/>At Board.java:[line 113]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0" onclick="toggleRow('d1e138');">
+            <td>
+               <span class="priority-2">EI</span>
+            </td>
+            <td>com.example.tictactoe.models.Board.receiveRow(int) may expose internal representation by returning Board.w3</td>
+         </tr>
+         <tr class="detailrow0">
+            <td/>
+            <td>
+               <p id="d1e138" style="display: none;">
+                  <a href="#EI_EXPOSE_REP">Bug type EI_EXPOSE_REP (click for details)</a>
+                  <br/>In class com.example.tictactoe.models.Board<br/>In method com.example.tictactoe.models.Board.receiveRow(int)<br/>Field com.example.tictactoe.models.Board.w3<br/>At Board.java:[line 116]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1" onclick="toggleRow('d1e154');">
+            <td>
+               <span class="priority-2">EI</span>
+            </td>
+            <td>com.example.tictactoe.models.Board.receiveRow(int) may expose internal representation by returning Board.w4</td>
+         </tr>
+         <tr class="detailrow1">
+            <td/>
+            <td>
+               <p id="d1e154" style="display: none;">
+                  <a href="#EI_EXPOSE_REP">Bug type EI_EXPOSE_REP (click for details)</a>
+                  <br/>In class com.example.tictactoe.models.Board<br/>In method com.example.tictactoe.models.Board.receiveRow(int)<br/>Field com.example.tictactoe.models.Board.w4<br/>At Board.java:[line 119]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0" onclick="toggleRow('d1e170');">
+            <td>
+               <span class="priority-2">EI</span>
+            </td>
+            <td>com.example.tictactoe.models.Board.receiveRow(int) may expose internal representation by returning Board.w5</td>
+         </tr>
+         <tr class="detailrow0">
+            <td/>
+            <td>
+               <p id="d1e170" style="display: none;">
+                  <a href="#EI_EXPOSE_REP">Bug type EI_EXPOSE_REP (click for details)</a>
+                  <br/>In class com.example.tictactoe.models.Board<br/>In method com.example.tictactoe.models.Board.receiveRow(int)<br/>Field com.example.tictactoe.models.Board.w5<br/>At Board.java:[line 122]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1" onclick="toggleRow('d1e186');">
+            <td>
+               <span class="priority-2">EI</span>
+            </td>
+            <td>com.example.tictactoe.models.Board.receiveRow(int) may expose internal representation by returning Board.w6</td>
+         </tr>
+         <tr class="detailrow1">
+            <td/>
+            <td>
+               <p id="d1e186" style="display: none;">
+                  <a href="#EI_EXPOSE_REP">Bug type EI_EXPOSE_REP (click for details)</a>
+                  <br/>In class com.example.tictactoe.models.Board<br/>In method com.example.tictactoe.models.Board.receiveRow(int)<br/>Field com.example.tictactoe.models.Board.w6<br/>At Board.java:[line 125]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0" onclick="toggleRow('d1e202');">
+            <td>
+               <span class="priority-2">EI</span>
+            </td>
+            <td>com.example.tictactoe.models.Board.receiveRow(int) may expose internal representation by returning Board.w7</td>
+         </tr>
+         <tr class="detailrow0">
+            <td/>
+            <td>
+               <p id="d1e202" style="display: none;">
+                  <a href="#EI_EXPOSE_REP">Bug type EI_EXPOSE_REP (click for details)</a>
+                  <br/>In class com.example.tictactoe.models.Board<br/>In method com.example.tictactoe.models.Board.receiveRow(int)<br/>Field com.example.tictactoe.models.Board.w7<br/>At Board.java:[line 128]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1" onclick="toggleRow('d1e218');">
+            <td>
+               <span class="priority-2">EI</span>
+            </td>
+            <td>com.example.tictactoe.models.Board.receiveRow(int) may expose internal representation by returning Board.w8</td>
+         </tr>
+         <tr class="detailrow1">
+            <td/>
+            <td>
+               <p id="d1e218" style="display: none;">
+                  <a href="#EI_EXPOSE_REP">Bug type EI_EXPOSE_REP (click for details)</a>
+                  <br/>In class com.example.tictactoe.models.Board<br/>In method com.example.tictactoe.models.Board.receiveRow(int)<br/>Field com.example.tictactoe.models.Board.w8<br/>At Board.java:[line 131]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0" onclick="toggleRow('d1e234');">
+            <td>
+               <span class="priority-2">EI</span>
+            </td>
+            <td>com.example.tictactoe.models.Board.receiveRow(int) may expose internal representation by returning Board.w9</td>
+         </tr>
+         <tr class="detailrow0">
+            <td/>
+            <td>
+               <p id="d1e234" style="display: none;">
+                  <a href="#EI_EXPOSE_REP">Bug type EI_EXPOSE_REP (click for details)</a>
+                  <br/>In class com.example.tictactoe.models.Board<br/>In method com.example.tictactoe.models.Board.receiveRow(int)<br/>Field com.example.tictactoe.models.Board.w9<br/>At Board.java:[line 134]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1" onclick="toggleRow('d1e251');">
+            <td>
+               <span class="priority-2">MS</span>
+            </td>
+            <td>com.example.tictactoe.models.Board.EMPTY_ROW should be package protected</td>
+         </tr>
+         <tr class="detailrow1">
+            <td/>
+            <td>
+               <p id="d1e251" style="display: none;">
+                  <a href="#MS_PKGPROTECT">Bug type MS_PKGPROTECT (click for details)</a>
+                  <br/>In class com.example.tictactoe.models.Board<br/>Field com.example.tictactoe.models.Board.EMPTY_ROW<br/>At Board.java:[line 25]</p>
+            </td>
+         </tr>
+      </table>
+      <h2>
+         <a name="Warnings_PERFORMANCE">Performance Warnings</a>
+      </h2>
+      <table class="warningtable" width="100%" cellspacing="0">
+         <tr class="tableheader">
+            <th align="left">Code</th>
+            <th align="left">Warning</th>
+         </tr>
+         <tr class="tablerow1" onclick="toggleRow('d1e329');">
+            <td>
+               <span class="priority-2">UuF</span>
+            </td>
+            <td>Unused field: com.example.tictactoe.services.GameService.PlayerTo</td>
+         </tr>
+         <tr class="detailrow1">
+            <td/>
+            <td>
+               <p id="d1e329" style="display: none;">
+                  <a href="#UUF_UNUSED_FIELD">Bug type UUF_UNUSED_FIELD (click for details)</a>
+                  <br/>In class com.example.tictactoe.services.GameService<br/>Field com.example.tictactoe.services.GameService.PlayerTo<br/>In GameService.java</p>
+            </td>
+         </tr>
+      </table>
+      <h1>
+         <a name="Details">Details</a>
+      </h1>
+      <h2>
+         <a name="EI_EXPOSE_REP">EI_EXPOSE_REP: May expose internal representation by returning reference to mutable object</a>
+      </h2>
+
+  <p> Returning a reference to a mutable object value stored in one of the object's fields
+  exposes the internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Returning a new copy of the object is better approach in many situations.</p>
+
+    <h2>
+         <a name="MS_PKGPROTECT">MS_PKGPROTECT: Field should be package protected</a>
+      </h2>
+
+  <p> A mutable static field could be changed by malicious code or
+   by accident.
+   The field could be made package protected to avoid
+   this vulnerability.</p>
+
+    <h2>
+         <a name="RC_REF_COMPARISON">RC_REF_COMPARISON: Suspicious reference comparison</a>
+      </h2>
+
+<p> This method compares two reference values using the == or != operator,
+where the correct way to compare instances of this type is generally
+with the equals() method.
+It is possible to create distinct instances that are equal but do not compare as == since
+they are different objects.
+Examples of classes which should generally
+not be compared by reference are java.lang.Integer, java.lang.Float, etc.</p>
+
+    <h2>
+         <a name="UUF_UNUSED_FIELD">UUF_UNUSED_FIELD: Unused field</a>
+      </h2>
+
+  <p> This field is never used.&nbsp; Consider removing it from the class.</p>
+
+    </body>
+</html>

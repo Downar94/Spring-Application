@@ -1,0 +1,64 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.5.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+	id "com.github.spotbugs" version "4.0.0"
+}
+spotbugs {
+	ignoreFailures = true
+	showProgress = false
+}
+sourceSets {
+ // we define `main` sourceSet here, so SpotBugs Gradle Plugin generates `spotbugsMain` task
+ main {
+ java.srcDirs = ['src/main/java']
+ }
+}
+
+description ="Tic-tac-toe game for 2 players. The game takes place on a 10x10 board. Players take turns sequentially until the win or draw. Win means that there are 5 characters of the same player next to each other in the column, row or diagonal of the board"
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+configurations {
+	developmentOnly
+	runtimeClasspath {
+		extendsFrom developmentOnly
+	}
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'com.h2database:h2'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+	spotbugsPlugins 'com.h3xstream.findsecbugs:findsecbugs-plugin:1.7.1'
+    spotbugs 'com.github.spotbugs:spotbugs:4.0.0'
+}
+spotbugsMain {
+    reports {
+        html {
+            enabled = true
+        }
+    }
+}
+
+task hello_world {
+    doLast {
+        println 'Hello'
+    }
+}
+test {
+	useJUnitPlatform()
+}
