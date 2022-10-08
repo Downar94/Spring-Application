@@ -11,3 +11,16 @@ A Tic-Tac-Toe Game Rest Api containing several Endpoints, 2 players and 10x10 ga
 View all started games.
 
 #### Initial response:
+
+#### Response in the middle of the game:
+
+#### Response at the end of the game:
+
+### GET /game/players
+View all registered players
+
+#### Initial response:
+
+#### Response after adding some players:
+
+
