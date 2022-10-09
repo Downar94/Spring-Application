@@ -60,12 +60,25 @@ View game state with a given index
 ![gameStateend](https://user-images.githubusercontent.com/44844566/194732482-b1e5fefd-5d82-4f07-9fbd-1eddb2991ea6.png)
 
 ### GET /game/{index}
-View nformation of the game with a given index
+View information of the game with a given index
 
 #### Initial response:
 
 #### Response after beginning the game:
 
+![gameindexmiddle](https://user-images.githubusercontent.com/44844566/194732592-c2e952ed-c089-4975-8605-b2c52670bb90.png)
 
 #### Response at the end of the game:
+
+![gameindexend](https://user-images.githubusercontent.com/44844566/194732596-478e7917-4ca6-4a8e-a07e-f3c16615e991.png)
+
+### GET /game/player/{index}
+View information of the player with a given index
+
+#### Initial response:
+
+#### Response after beginning the game:
+
+#### Response at the end of the game:
+
 
