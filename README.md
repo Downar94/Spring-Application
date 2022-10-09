@@ -81,4 +81,19 @@ View information of the player with a given index
 
 #### Response at the end of the game:
 
+![gameindexend](https://user-images.githubusercontent.com/44844566/194732685-a3a6fe1b-8039-4c67-86e1-ee65b6eb969e.png)
 
+## 2. POST
+### POST /game/newPlayer
+Add new player to the game
+
+#### Body:
+
+#### Response:
+
+### POST /game/newGame
+Begin new game
+
+#### Body:
+
+#### Response:
