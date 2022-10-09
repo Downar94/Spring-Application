@@ -17,6 +17,8 @@ View all started games.
 
 
 #### Response at the end of the game:
+![gameallend](https://user-images.githubusercontent.com/44844566/194732215-33fcf275-fbe1-4f64-8bdf-8b91b2b8f76b.png)
+
 
 ### GET /game/players
 View all registered players
