@@ -40,4 +40,19 @@ View all game states
 
 #### Response after beginning the game:
 
+![gamestatesmiddle](https://user-images.githubusercontent.com/44844566/194732382-1449f526-d8bf-42cf-aa2f-69d4dd0ba295.png)
+
 #### Response at the end of the game:
+
+![gamestatesend](https://user-images.githubusercontent.com/44844566/194732386-20efacf1-9a1b-467a-b527-c637881d1021.png)
+
+### GET /game/gameState/{index}
+View game state with a given index
+
+#### Initial response:
+
+#### Response after beginning the game:
+
+
+#### Response at the end of the game:
+
