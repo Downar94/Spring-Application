@@ -4,7 +4,17 @@ A Tic-Tac-Toe Game Rest Api containing several Endpoints, 2 players and 10x10 ga
 * [Endpoints](#endpoints):
   * [GET](#GET):
     1. [GET /game/all](#GET/game/all)
-    2. 
+    2. [GET /game/players](#GET/game/players)
+    3. [GET /game/gameStates](#GET/game/gameStates)
+    4. [GET /game/gameState/{index}](#GET/game/gameState/{index})
+    5. [GET /game/{index}](#GET/game/{index})
+    6. [GET /game/player/{index}](#GET/game/player/{index})
+  * [POST](#POST):
+    1. [POST /game/newPlayer](#POST/game/newPlayer)
+    2. [POST /game/newGame](#POST/game/newGame)
+  * [PUT](#PUT):
+    1. [PUT /game/move](#PUT/game/move)
+* [Unit tests](#unit):
 
 <a name="endpoints"></a>
 # Endpoints
@@ -20,8 +30,7 @@ View informations on all started games.
 
 #### Response at the end of the game:
 ![gameallend](https://user-images.githubusercontent.com/44844566/194732215-33fcf275-fbe1-4f64-8bdf-8b91b2b8f76b.png)
-
-
+<a name="GET/game/players"></a>
 ### GET /game/players
 View all registered players
 
@@ -32,7 +41,7 @@ View all registered players
 #### Response at the end of the game:
 
 ![playersend](https://user-images.githubusercontent.com/44844566/194732296-b40c0099-9d95-4e3b-8c13-1f33b3227958.png)
-
+<a name="GET/game/gameStates"></a>
 ### GET /game/gameStates
 View all game states
 
@@ -43,7 +52,7 @@ View all game states
 #### Response at the end of the game:
 
 ![gamestatesend](https://user-images.githubusercontent.com/44844566/194732386-20efacf1-9a1b-467a-b527-c637881d1021.png)
-
+<a name="GET/game/gameState/{index}"></a>
 ### GET /game/gameState/{index}
 View game state with a given index
 
@@ -54,7 +63,7 @@ View game state with a given index
 #### Response at the end of the game:
 
 ![gameStateend](https://user-images.githubusercontent.com/44844566/194732482-b1e5fefd-5d82-4f07-9fbd-1eddb2991ea6.png)
-
+<a name="GET/game/{index}"></a>
 ### GET /game/{index}
 View information of the game with a given index
 
@@ -65,7 +74,7 @@ View information of the game with a given index
 #### Response at the end of the game:
 
 ![gameindexend](https://user-images.githubusercontent.com/44844566/194732596-478e7917-4ca6-4a8e-a07e-f3c16615e991.png)
-
+<a name="GET/game/player/{index}"></a>
 ### GET /game/player/{index}
 View information of the player with a given index
 
@@ -76,8 +85,9 @@ View information of the player with a given index
 #### Response at the end of the game:
 
 ![playerindexend](https://user-images.githubusercontent.com/44844566/194755112-d65131a1-caa7-4b5b-852f-9eb447527718.png)
-
+<a name="POST"></a>
 ## 2. POST
+<a name="POST/game/newPlayer"></a>
 ### POST /game/newPlayer
 Add new player to the game
 
@@ -88,7 +98,7 @@ Add new player to the game
 #### Response:
 
 ![newplayerresponse](https://user-images.githubusercontent.com/44844566/194732868-edd0e45c-7287-4781-8ed6-8252b0118703.png)
-
+<a name="POST/game/newGame"></a>
 ### POST /game/newGame
 Beginning new game
 
@@ -99,8 +109,9 @@ Beginning new game
 #### Response:
 
 ![newgameresponse](https://user-images.githubusercontent.com/44844566/194732873-c319f09f-7d5c-4b78-858d-8099384f9a5e.png)
-
+<a name="PUT"></a>
 ## 3. PUT
+<a name="PUT/game/move"></a>
 ### PUT /game/move
 Make a player move
 #### Body:
@@ -114,5 +125,5 @@ Make a player move
 #### Response after a winning move sequence:
 
 ![movewinning](https://user-images.githubusercontent.com/44844566/194732966-7da4036e-8437-4932-b1fd-4ffce3f0d564.png)
-
+<a name="unit"></a>
 ## 2. Unit tests
