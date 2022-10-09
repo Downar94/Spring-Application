@@ -89,11 +89,28 @@ Add new player to the game
 
 #### Body:
 
+![newplayerbody](https://user-images.githubusercontent.com/44844566/194732867-b7cec85d-f176-43dc-8c3f-55184488ff11.png)
+
 #### Response:
 
+![newplayerresponse](https://user-images.githubusercontent.com/44844566/194732868-edd0e45c-7287-4781-8ed6-8252b0118703.png)
+
 ### POST /game/newGame
-Begin new game
+Beginning new game
 
 #### Body:
 
+![newgamebody](https://user-images.githubusercontent.com/44844566/194732869-33bc8388-059f-4e09-b480-152f32a59116.png)
+
 #### Response:
+
+![newgameresponse](https://user-images.githubusercontent.com/44844566/194732873-c319f09f-7d5c-4b78-858d-8099384f9a5e.png)
+
+## 3. PUT
+### PUT /game/move
+Make a player move
+#### Body:
+
+#### Response after a single:
+
+#### Response after a winning move sequence:
