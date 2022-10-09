@@ -127,3 +127,5 @@ Make a player move
 ![movewinning](https://user-images.githubusercontent.com/44844566/194732966-7da4036e-8437-4932-b1fd-4ffce3f0d564.png)
 <a name="unit"></a>
 ## 2. Unit tests
+
+The tests have been done using mainly Spring MockMVC
