@@ -131,4 +131,5 @@ Make a player move
 The tests have been done using mainly Spring MockMVC
 
 #### Sample screens:
-
+![screen1test](https://user-images.githubusercontent.com/44844566/194756608-a7f29bf2-d0c8-467b-ab4c-78c3a5c210af.PNG)
+![screen2test](https://user-images.githubusercontent.com/44844566/194756613-f9b9b60f-f531-4ba2-9dc0-331c89617cfa.PNG)
