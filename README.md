@@ -13,6 +13,8 @@ View all started games.
 #### Initial response:
 
 #### Response in the middle of the game:
+![310958997_422241606763847_2528255453570116688_n](https://user-images.githubusercontent.com/44844566/194732176-67d40dd7-3800-4e22-bcd6-a2661d1036fc.png)
+
 
 #### Response at the end of the game:
 
