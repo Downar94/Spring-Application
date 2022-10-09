@@ -27,4 +27,7 @@ View all registered players
 
 #### Response after adding some players:
 
+![playersmiddle](https://user-images.githubusercontent.com/44844566/194732253-92bda04c-df26-45b9-acef-22175f90d407.png)
+
+#### Response at the end of the game:
 
