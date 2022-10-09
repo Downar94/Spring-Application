@@ -14,8 +14,6 @@ A Tic-Tac-Toe Game Rest Api containing several Endpoints, 2 players and 10x10 ga
 ### GET /game/all
 View informations on all started games.
 
-#### Initial response:
-
 #### Response in the middle of the game:
 ![310958997_422241606763847_2528255453570116688_n](https://user-images.githubusercontent.com/44844566/194732176-67d40dd7-3800-4e22-bcd6-a2661d1036fc.png)
 
@@ -26,8 +24,6 @@ View informations on all started games.
 
 ### GET /game/players
 View all registered players
-
-#### Initial response:
 
 #### Response after adding some players:
 
@@ -40,8 +36,6 @@ View all registered players
 ### GET /game/gameStates
 View all game states
 
-#### Initial response:
-
 #### Response after beginning the game:
 
 ![gamestatesmiddle](https://user-images.githubusercontent.com/44844566/194732382-1449f526-d8bf-42cf-aa2f-69d4dd0ba295.png)
@@ -52,8 +46,6 @@ View all game states
 
 ### GET /game/gameState/{index}
 View game state with a given index
-
-#### Initial response:
 
 #### Response after beginning the game:
 
@@ -66,8 +58,6 @@ View game state with a given index
 ### GET /game/{index}
 View information of the game with a given index
 
-#### Initial response:
-
 #### Response after beginning the game:
 
 ![gameindexmiddle](https://user-images.githubusercontent.com/44844566/194732592-c2e952ed-c089-4975-8605-b2c52670bb90.png)
@@ -78,8 +68,6 @@ View information of the game with a given index
 
 ### GET /game/player/{index}
 View information of the player with a given index
-
-#### Initial response:
 
 #### Response after beginning the game:
 
