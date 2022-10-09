@@ -14,7 +14,7 @@ A Tic-Tac-Toe Game Rest Api containing several Endpoints, 2 players and 10x10 ga
     2. [POST /game/newGame](#POST/game/newGame)
   * [PUT](#PUT):
     1. [PUT /game/move](#PUT/game/move)
-* [Unit tests](#unit):
+* [Application tests](#test):
 
 <a name="endpoints"></a>
 # Endpoints
@@ -125,7 +125,10 @@ Make a player move
 #### Response after a winning move sequence:
 
 ![movewinning](https://user-images.githubusercontent.com/44844566/194732966-7da4036e-8437-4932-b1fd-4ffce3f0d564.png)
-<a name="unit"></a>
-## 2. Unit tests
+<a name="test"></a>
+## 2. Application tests
 
 The tests have been done using mainly Spring MockMVC
+
+#### Sample screens:
+
