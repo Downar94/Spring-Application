@@ -2,11 +2,15 @@
 A Tic-Tac-Toe Game Rest Api containing several Endpoints, 2 players and 10x10 game's board. 
 ## Table of contents
 * [Endpoints](#endpoints):
-  * GET
+  * [GET](#GET):
+    1. [GET /game/all](#GET/game/all)
+    2. 
 
 <a name="endpoints"></a>
 # Endpoints
+<a name="GET"></a>
 ## 1. GET
+<a name="GET/game/all"></a>
 ### GET /game/all
 View informations on all started games.
 
