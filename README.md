@@ -8,7 +8,7 @@ A Tic-Tac-Toe Game Rest Api containing several Endpoints, 2 players and 10x10 ga
 # Endpoints
 ## 1. GET
 ### GET /game/all
-View all started games.
+View informations on all started games.
 
 #### Initial response:
 
@@ -48,6 +48,19 @@ View all game states
 
 ### GET /game/gameState/{index}
 View game state with a given index
+
+#### Initial response:
+
+#### Response after beginning the game:
+
+![gamestatemiddle](https://user-images.githubusercontent.com/44844566/194732478-40e9aeae-25ee-4bdc-96bd-ec4d33a1be39.png)
+
+#### Response at the end of the game:
+
+![gameStateend](https://user-images.githubusercontent.com/44844566/194732482-b1e5fefd-5d82-4f07-9fbd-1eddb2991ea6.png)
+
+### GET /game/{index}
+View nformation of the game with a given index
 
 #### Initial response:
 
