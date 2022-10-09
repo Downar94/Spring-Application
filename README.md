@@ -75,7 +75,7 @@ View information of the player with a given index
 
 #### Response at the end of the game:
 
-![gameindexend](https://user-images.githubusercontent.com/44844566/194732685-a3a6fe1b-8039-4c67-86e1-ee65b6eb969e.png)
+![playerindexend](https://user-images.githubusercontent.com/44844566/194755112-d65131a1-caa7-4b5b-852f-9eb447527718.png)
 
 ## 2. POST
 ### POST /game/newPlayer
