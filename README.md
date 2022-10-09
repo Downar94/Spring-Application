@@ -111,6 +111,12 @@ Beginning new game
 Make a player move
 #### Body:
 
-#### Response after a single:
+![movebody](https://user-images.githubusercontent.com/44844566/194732962-8b57cae9-6145-4b18-9c16-88a033127959.png)
+
+#### Response after a single move:
+
+![movemiddle](https://user-images.githubusercontent.com/44844566/194732964-7f37200a-9f4c-4f9f-9c5c-bdfd5d29fa48.png)
 
 #### Response after a winning move sequence:
+
+![movewinning](https://user-images.githubusercontent.com/44844566/194732966-7da4036e-8437-4932-b1fd-4ffce3f0d564.png)
