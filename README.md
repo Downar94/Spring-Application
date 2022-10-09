@@ -31,3 +31,13 @@ View all registered players
 
 #### Response at the end of the game:
 
+![playersend](https://user-images.githubusercontent.com/44844566/194732296-b40c0099-9d95-4e3b-8c13-1f33b3227958.png)
+
+### GET /game/gameStates
+View all game states
+
+#### Initial response:
+
+#### Response after beginning the game:
+
+#### Response at the end of the game:
