@@ -71,6 +71,8 @@ View information of the player with a given index
 
 #### Response after beginning the game:
 
+![playerindexmiddle](https://user-images.githubusercontent.com/44844566/194754951-39dfec72-88f3-4a6a-8f5d-a948749540bb.png)
+
 #### Response at the end of the game:
 
 ![gameindexend](https://user-images.githubusercontent.com/44844566/194732685-a3a6fe1b-8039-4c67-86e1-ee65b6eb969e.png)
@@ -112,3 +114,5 @@ Make a player move
 #### Response after a winning move sequence:
 
 ![movewinning](https://user-images.githubusercontent.com/44844566/194732966-7da4036e-8437-4932-b1fd-4ffce3f0d564.png)
+
+## 2. Unit tests
